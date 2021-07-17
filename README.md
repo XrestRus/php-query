@@ -10,6 +10,7 @@
 ### <code>[XrestRus/task-php-1/database/db.php](https://github.com/XrestRus/task-php-1/tree/master/database)</code>
 ## Использование: 
   - настроить <code>config.php</code> 
+  - создать бд (test_posts_db) и импортировать схему
   - в консоле перейти в место хранение файла (db.php) 
   - и если php установлен глобально, 
      - то, запустить командой <code>php db.php</code>
