@@ -2,6 +2,9 @@
 
 use classes\DBConnect;
 
+require_once "../config.php";
+require_once "../classes/DBConnect.php";
+
 class CreateData {
     public function __invoke()
     {
