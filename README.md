@@ -14,5 +14,7 @@
   - и если php установлен глобально, 
      - то, запустить командой <code>php db.php</code>
      - иначе, найти место хранение php.exe и использовать его <code>Пример: C:\OpenServer\modules\php\PHP_8.0\php.exe db.php </code>
-     
+
+![image](https://user-images.githubusercontent.com/52876110/126035769-a0946498-9a04-457a-8e23-0b7b69b854f6.png)
+
 ### 3. [Форма поиска(посмотреть пример)](http://tstphp.azurewebsites.net/index.php)
