@@ -23,7 +23,6 @@ class DBConnect {
         string $db = DB
     ) {
         $this->con = new \mysqli($host, $user, $pas, $db);
-          print_r(mysqli_connect_errno());
         if (mysqli_connect_errno()) die("Неверное подключение");
     }
 
