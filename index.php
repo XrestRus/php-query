@@ -7,7 +7,7 @@ require_once "classes/DBConnect.php";
 require_once "classes/Search.php";
 require_once "controllers/searchController.php";
 
-require_once "database/db.php";
+// require_once "database/db.php";
 
 $isSearch = false;
 
