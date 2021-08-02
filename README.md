@@ -18,3 +18,4 @@
 
 ![image](https://user-images.githubusercontent.com/52876110/126035769-a0946498-9a04-457a-8e23-0b7b69b854f6.png)
 
+# [Пример](https://query-php-server-xrest.herokuapp.com/)
