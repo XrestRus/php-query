@@ -6,7 +6,7 @@
 // define('PAS', 'root');
 // define('DB', 'test_posts_db');
 
-$url = parse_url(getenv("CLEARDB_CYAN_URL"));
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
 $server = $url["host"];
 $username = $url["user"];
