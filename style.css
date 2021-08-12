@@ -16,6 +16,8 @@ body {
 }
 
 .form-search {
+    position: sticky;
+    top: 0;
     display: flex;
     max-width: 800px;
     width: 100%;
