@@ -3,11 +3,11 @@
 
 
 ### 1. Схема БД для хранения записей и комментариев находится в 
-### <code>[XrestRus/task-php-1/database](https://github.com/XrestRus/task-php-1/tree/master/database)</code> 
+### <code>[XrestRus/php-query/database](https://github.com/XrestRus/php-query/tree/master/database)</code> 
     Надо создать базу данных (test_posts_db) и импортировать схему.
     
 ### 2. Скрипт загрузки находится в 
-### <code>[XrestRus/task-php-1/database/db.php](https://github.com/XrestRus/task-php-1/tree/master/database)</code>
+### <code>[XrestRus/php-query/database/db.php](https://github.com/XrestRus/php-query/tree/master/database)</code>
 ## Использование: 
   - настроить <code>config.php</code> 
   - создать бд (test_posts_db) и импортировать схему
