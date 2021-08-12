@@ -8,7 +8,7 @@ use classes\Search;
 /**
  *  Класс контроллер для POST запроса на поиск
  * 
- *  @method Searcher($searchWord)
+ *  @method This->Searcher($searchWord)
  */
 class SearchController {
     /**
@@ -18,12 +18,11 @@ class SearchController {
      * 
      * @return Search возвращает объект для поиска
      */
-    public function Searcher(string $searchWord)
+    public function Searcher(string $searchWord): Search
     {
         $dbConnect = new DBConnect();
-        $searchWord = html_entity_decode($_POST['searchWord']);
-        $search = new Search($dbConnect, $searchWord);
-        
-        return $search;
+        $searchWord = $searchWord ?? html_entity_decode($_POST['searchWord']);
+
+        return new Search($dbConnect, $searchWord);
     }
 }

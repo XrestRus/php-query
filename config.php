@@ -1,17 +1,10 @@
 <?php
+$url = parse_url(getenv('CLEARDB_DATABASE_URL'));
 
-//Разработка
-// define('HOST', 'localhost');
-// define('USER', 'root');
-// define('PAS', 'root');
-// define('DB', 'test_posts_db');
-
-$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-
-$server = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$db = substr($url["path"], 1);
+$server = $url['host'] ?? 'localhost';
+$username = $url['user'] ?? 'admin';
+$password = $url['pass'] ?? 'password';
+$db = $url['path'] ? substr($url['path'], 1) : 'test_posts_db';
 
 define('HOST', $server);
 define('USER', $username);

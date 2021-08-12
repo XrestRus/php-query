@@ -1,5 +1,5 @@
-<div>
-    <div class="border">
+<div class="posts">
+    <div class="post border">
         Введите слово
     </div>
 </div>

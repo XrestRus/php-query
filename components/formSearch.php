@@ -1,9 +1,10 @@
-<form 
+<form
     action="index.php" 
     method="POST"
     class="form-search"
 >
-    <input 
+    <label for="searchWord"></label>
+    <input
         type="text" 
         class="form-search__input-search border"
         name="searchWord"
@@ -11,7 +12,11 @@
         placeholder="Введите текст"
         minlength="3"
         required
-        value="<?php print $isSearch ? $_POST['searchWord'] : "" ?>"
+        value="<?php
+            global $isSearch;
+            $value = $isSearch ? $_POST['searchWord'] : '';
+            print  $value;
+        ?>"
     >
     <button 
         type="submit"

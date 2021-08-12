@@ -2,6 +2,8 @@
 
 namespace classes;
 
+use mysqli;
+
 /**
  * Класс для подключение к бд
  * 
@@ -14,7 +16,7 @@ class DBConnect {
     /**
      * Свойство подключения
      */
-    private $con;
+    private mysqli $con;
 
     public function __construct(
         string $host = HOST, 
@@ -22,7 +24,7 @@ class DBConnect {
         string $pas = PAS, 
         string $db = DB
     ) {
-        $this->con = new \mysqli($host, $user, $pas, $db);
+        $this->con = new mysqli($host, $user, $pas, $db);
         if (mysqli_connect_errno()) die("Неверное подключение");
     }
 
@@ -31,7 +33,7 @@ class DBConnect {
      * 
      * @return mysqli возвращает подключение MySql
      */
-    public function getConnect() {
+    public function getConnect() : mysqli {
         return $this->con;
     }
 }
